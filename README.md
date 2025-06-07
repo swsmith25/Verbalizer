@@ -5,6 +5,10 @@ A family friend recently found himself in the hospital: paralized and trached. T
 
 This product is made for people like him. Those who need a last resort tool for communication. It will take live video feed of someone speaking or mouthing words and transcribe the communication. For those mouthing words, there will be an option for a simulated text-tos-speech option.
 
+## Dependencies
+
+<img src="https://learning.rc.virginia.edu/courses/opencv/opencv_logo.png" alt="OPENCV" height="50">
+<img src="https://www.quintagroup.com/blog/blog-images/machine-learning-libraries/tensorflow.png/@@images/image.png" alt="TENSORFLOW" height="50">
 
 ## Authors
 

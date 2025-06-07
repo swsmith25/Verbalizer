@@ -2,11 +2,13 @@ import os
 import numpy as np
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
-from preprocessing import LipPreprocessor
+from preprocess import Preprocessor
+from configure import Config
+from tqdm import tqdm
 
 class LipReaderDataset:
     def __init__(self):
-        self.preprocessor = LipPreprocessor()
+        self.preprocessor = Preprocessor()
         self.class_to_idx = {}
         self.idx_to_class = {}
         

@@ -2,11 +2,7 @@ import mediapipe as mp
 import cv2
 import numpy as np
 from tqdm import tqdm
-
-import cv2
-import numpy as np
-import mediapipe as mp
-from tqdm import tqdm
+from configure import Config
 
 class Preprocessor:
     def __init__(self):

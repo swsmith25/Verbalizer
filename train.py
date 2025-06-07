@@ -1,8 +1,8 @@
 import tensorflow as tf
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
-from data_loader import LipReaderDataset
+from load_data import LipReaderDataset
 from model import create_lip_reader_model
-from config import Config
+from configure import Config
 
 def train():
     # Initialize

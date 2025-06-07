@@ -4,6 +4,7 @@ from tensorflow.keras.layers import (
     TimeDistributed, Conv2D, MaxPool2D, Flatten,
     LSTM, Dense, Dropout
 )
+from configure import Config
 
 def create_lip_reader_model():
     """Create a 3D CNN + LSTM model for lip reading"""

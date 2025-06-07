@@ -1,10 +1,13 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from preprocess import Preprocessor
+from configure import Config
 
 def visualize_lip_movement(video_path, output_path=None):
     """Visualize lip movement from a video"""
-    preprocessor = LipPreprocessor()
+    preprocessor = Preprocessor()
     cap = cv2.VideoCapture(video_path)
     
     frames = []
@@ -38,7 +41,7 @@ def visualize_lip_movement(video_path, output_path=None):
 
 def predict_from_video(model, video_path, class_mapping):
     """Make prediction on a single video"""
-    preprocessor = LipPreprocessor()
+    preprocessor = Preprocessor()
     frames = preprocessor.process_video(video_path)
     frames = np.expand_dims(frames, axis=0)  # Add batch dimension
     
